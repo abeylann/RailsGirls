@@ -6,7 +6,7 @@
     <% @ideas.each do |idea| %>
       <div class = "grid" >
         <%= link_to idea do %>
-          <%= image_tag(idea.picture_url) if idea.picture.present? %> 
+          <%= picture_image_tag(idea) %>
         <% end %>
       </div>
     <% end %>
