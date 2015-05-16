@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Grid</h1>
+
+<div class="grids">
+    <% @ideas.each do |idea| %>
+      <div class = "grid" >
+        <%= link_to idea do %>
+          <%= image_tag(idea.picture_url) if idea.picture.present? %> 
+        <% end %>
+      </div>
+    <% end %>
+</div>

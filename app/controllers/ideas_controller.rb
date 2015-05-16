@@ -7,6 +7,10 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
+  def grid
+      @ideas = Idea.all
+    end
+    
   # GET /ideas/1
   # GET /ideas/1.json
   def show
