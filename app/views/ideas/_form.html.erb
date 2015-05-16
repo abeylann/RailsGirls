@@ -20,8 +20,13 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
+    <% if Rails.env.production? %>
+    <%= f.label :picture_store %><br>
+    <%= f.file_field :picture_store %>  
+    <% else %>
     <%= f.label :picture %><br>
     <%= f.file_field :picture %>  
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>
