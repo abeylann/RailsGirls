@@ -37,6 +37,7 @@ gem 'pry'
 # gem 'capistrano-rails', group: :development
 group :production do
 	gem 'pg'
+	gem 'carrierwave-postgresql'
 end
 
 group :development, :test do
