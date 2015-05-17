@@ -35,10 +35,8 @@ gem 'pry'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :production do
-	gem 'pg'
-	gem 'carrierwave-postgresql'
-end
+gem 'pg'
+gem 'carrierwave-postgresql'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
