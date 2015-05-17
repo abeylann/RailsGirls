@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     get :grid, on: :collection
   end
 
-
+  mount PostgresqlLoStreamer::Engine => "/idea_picture_store"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
